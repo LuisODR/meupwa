@@ -53,7 +53,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?index.html",
+  "start_url": "/meupwa/",
+  "scope": "/meupwa/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000"
