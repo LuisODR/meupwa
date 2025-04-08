@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu PWA</title>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="icons/icon-72x72.png" />
     <link rel="apple-touch-icon" href="icons/icon-96x96.png" />
@@ -21,12 +27,6 @@
 </head>
 
 <body>
-
-    <style>
-        header {
-            margin-bottom: 70px;
-        }
-    </style>
 
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -56,52 +56,54 @@
         </nav>
     </header>
 
-    <div class="container">
+
+
+    <h3 class="d-flex justify-content-center mt-3">Sobre mim</h3>
+    <div class="container mt-3">
+        
         <div class="row">
             <div class="col-12 col-md-4">
-                <h1 class="d-flex justify-content-center">Giant Panda</h1>
-                <img src="panda.png" class="img-fluid" alt="panda" />
+                <img src="png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+                    alt="Foto Pessoal" class="img-fluid rounded-circle " />
             </div>
             <div class="col-12 col-md-8 d-flex align-items-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda suscipit minima exercitationem
-                    reiciendis possimus illo voluptates repudiandae, error cupiditate provident quasi cumque voluptate
-                    aliquam pariatur omnis, odio saepe molestias ea!</p>
+                <p>Olá, eu sou o Luís!
+                    Sou um Desenvolvedor C# apaixonado por criar soluções robustas e eficientes usando tecnologias .NET,
+                    com experiência em desenvolvimento de aplicações desktop, web e APIs, busco sempre entregar código
+                    limpo, escalável e alinhado às melhores práticas do mercado.!</p>
             </div>
         </div>
-        <hr>
-        <hr>
-        <hr>
         <div class="row">
-            <div class="col-12 col-md-4 order-md-last">
-                <h1 class="d-flex justify-content-center">Sea Turtles</h1>
-                <img src="sea_turtle.jpg" class="img-fluid" alt="sea turtle" />
-            </div>
-            <div class="col-12 col-md-8 order-md-first d-flex align-items-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ab nobis magni cumque consequatur
-                    alias dolor esse earum minus incidunt hic minima, et dolore eum. Hic adipisci labore porro
-                    reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ab nobis magni cumque
-                    consequatur
-                    alias dolor esse earum minus incidunt hic minima, et dolore eum. Hic adipisci labore porro
-                    reiciendis</p>
+            <div class="col-12 col-md-12 order-md-first d-flex justify-content-center mt-2">
+                <p>Minhas habilidades incluem:
+                    ✔ Desenvolvimento em C#, .NET Core/.NET e ASP.NET
+                    ✔ Bancos de dados relacionais (SQL Server, MySQL) e ORMs como Entity Framework
+                    ✔ Criação de APIs RESTful e integração com serviços externos
+                    ✔ Conhecimento em padrões de arquitetura como MVC, DDD e Clean Architecture
+                    ✔ Controle de versão com Git e metodologias ágeis (Scrum, Kanban)
+                    Acredito na aprendizagem contínua e estou sempre explorando novas tecnologias para melhorar minhas
+                    soluções. Seja para automatizar processos, desenvolver sistemas complexos ou colaborar em equipe,
+                    meu objetivo é transformar ideias em software de qualidade.
+                    📫 Vamos conversar? Entre em contato pelo LinkedIn ou WhatsApp.
+                </p>
             </div>
         </div>
     </div>
 
+    <div class="row justify-content-center g-3">
+        <div class="col-auto d-grid py-2"> 
+            <a href="http://linkedin.com/in/luisodr" class="btn btn-primary btn-lg" style="width: 200px;" target="_blank">Linkedin</a>
+        </div>
+        <div class="col-auto d-grid py-2">
+            <a href="https://wa.me/5554981232538?text=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20oportunidades." class="btn btn-secondary btn-lg" style="width: 200px;" target="_blank">WhatsApp</a>
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", function () {
-                navigator.serviceWorker
-                    .register("/meupwa/service-worker.js")
-                    .then(res => console.log("service worker registered"))
-                    .catch(err => console.log("service worker not registered", err))
-            })
-        }
-    </script>
+
+
+
+
 </body>
 
 </html>
